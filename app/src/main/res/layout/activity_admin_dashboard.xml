@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".Admin.Admin_Dashboard">
+
+    <Button
+        android:id="@+id/View_payment"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:onClick="btn_main"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/baseline_logout"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    <TextView
+        android:id="@+id/txtWellcome"
+        android:layout_width="wrap_content"
+        android:textAllCaps="true"
+        android:layout_height="wrap_content"
+        android:text="Wellcome"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:id="@+id/btn"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtWellcome"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/round_back_primary"
+            android:onClick="SeeUsers"
+            android:text="View users"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_couse"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/round_back_primary"
+            android:onClick="Addcoures"
+            android:text="Add Coure"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Location"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/round_back_primary"
+            android:onClick="Location"
+            android:text="Location"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck" />
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_background"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:drawablePadding="8dp"
+        android:hint="Search Course"
+        android:inputType="text"
+        android:padding="8dp" />
+
+    <ListView
+        android:id="@+id/courseListView"
+        android:layout_width="match_parent"
+        android:layout_height="478dp"
+        android:layout_below="@id/searchEditText"
+        android:background="@drawable/custom_background"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:padding="16dp" />
+</RelativeLayout>

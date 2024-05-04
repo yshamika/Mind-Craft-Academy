@@ -1,0 +1,21 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Setting the background color of the border -->
+    <solid android:color="@color/primary_card"/>
+
+    <!-- Setting the border -->
+    <stroke
+        android:width="4px"
+    android:color="@color/black"/>
+
+    <!-- Setting the corner radius of the border -->
+    <corners android:radius="8dp"/> <!-- Adjust the corner radius as needed -->
+
+    <!-- Padding for shadow -->
+    <padding
+        android:bottom="8dp"
+        android:left="8dp"
+        android:right="8dp"
+        android:top="8dp" />
+</shape>

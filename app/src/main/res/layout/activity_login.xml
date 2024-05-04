@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center"
+android:orientation="vertical"
+    android:background="@drawable/custom_background"
+tools:context=".User.LoginActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="Sign In"
+    android:textSize="30sp"
+    android:textStyle="bold"
+    android:textColor="#03A2C8"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="Please login to your account"
+    android:layout_marginTop="5dp"
+    android:textColor="#9001AED8"
+    />
+<EditText
+    android:id="@+id/EmailEditText"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@drawable/round_back_dark_blue5_15"
+    android:hint="Enter Email"
+    android:onClick="Edit_text"
+    android:maxLines="1"
+    android:inputType="text"
+    android:textSize="16sp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="40dp"
+    />
+
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/loginButton"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_marginEnd="20dp"
+    android:textSize="18dp"
+    android:layout_marginStart="20dp"
+    android:text="Sign In"
+    android:onClick="LoginButton"
+    android:textAllCaps="false"
+    android:layout_marginTop="40dp"
+    android:background="@drawable/round_back_primary"
+    android:textColor="#ffffff"
+    />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
+
+    <View
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1A0000"
+        android:layout_toStartOf="@+id/orTxt"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        />
+    <TextView
+        android:id="@+id/orTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:layout_centerInParent="true"
+        android:textSize="12sp"
+        android:textColor="#80000000"/>
+
+    <View
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1A0000"
+        android:layout_toEndOf="@+id/orTxt"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        />
+</RelativeLayout>
+
+<LinearLayout
+    android:id="@+id/singup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an Account"/>
+
+    <TextView
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:clickable="true"
+        android:text="Sign Up"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/Admin_login"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="100dp"
+        android:clickable="true"
+        android:text="Admin Login"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        tools:ignore="TouchTargetSizeCheck"/>
+
+</LinearLayout>

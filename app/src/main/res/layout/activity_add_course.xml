@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/custom_background"
+    tools:context=".Course.AddCourseActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Add Course"
+        android:textColor="#03A2C8"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/C_nameEditText"
+        android:hint="Course Name"
+        android:layout_width="match_parent"
+        android:background="@drawable/round_back_dark_blue5_15"
+        android:layout_height="55dp"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:layout_below="@+id/name"
+        android:paddingEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:textSize="16sp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/costEditText"
+        android:layout_width="match_parent"
+        android:background="@drawable/round_back_dark_blue5_15"
+        android:layout_height="55dp"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:inputType="number"
+        android:layout_below="@id/C_nameEditText"
+        android:hint="Cost"/>
+
+    <EditText
+        android:id="@+id/startDateEditText"
+        android:layout_width="match_parent"
+        android:background="@drawable/round_back_dark_blue5_15"
+        android:layout_height="55dp"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:inputType="date"
+        android:layout_below="@id/costEditText"
+        android:hint="Start Date" />
+
+    <EditText
+        android:id="@+id/regiEndDateEditText"
+        android:layout_width="match_parent"
+        android:background="@drawable/round_back_dark_blue5_15"
+        android:layout_height="55dp"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:inputType="date"
+        android:layout_below="@id/startDateEditText"
+        android:hint="Registration End Date" />
+
+    <EditText
+        android:id="@+id/durationEditText"
+        android:layout_width="match_parent"
+        android:background="@drawable/round_back_dark_blue5_15"
+        android:layout_height="55dp"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:layout_below="@id/regiEndDateEditText"
+        android:hint="Duration" />
+
+    <EditText
+        android:id="@+id/maxNumEditText"
+        android:layout_width="match_parent"
+        android:background="@drawable/round_back_dark_blue5_15"
+        android:layout_height="55dp"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:inputType="number"
+        android:layout_below="@id/durationEditText"
+        android:hint="Max Number of Participants" />
+
+    <EditText
+        android:id="@+id/locationsEditText"
+        android:layout_width="match_parent"
+        android:background="@drawable/round_back_dark_blue5_15"
+        android:layout_height="55dp"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:layout_below="@id/maxNumEditText"
+        android:hint="Locations" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="18dp"
+        android:layout_marginTop="30dp"
+        android:text="Add Course"
+        android:textAllCaps="false"
+        android:layout_below="@id/locationsEditText"
+        android:background="@drawable/round_back_primary"
+        android:textColor="#ffffff"
+        />
+
+</RelativeLayout>

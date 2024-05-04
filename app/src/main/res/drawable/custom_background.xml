@@ -1,0 +1,26 @@
+<!-- custom_background_more_beautiful.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Gradient background -->
+    <gradient
+        android:angle="45"
+        android:startColor="#3601AED8"
+        android:endColor="#FDFDFD" />
+
+    <!-- Rounded corners -->
+    <corners android:radius="16dp" />
+
+    <!-- Border -->
+    <stroke
+        android:width="2dp"
+        android:color="#1201AED8" />
+
+    <!-- Add some padding -->
+    <padding
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp" />
+
+</shape>
